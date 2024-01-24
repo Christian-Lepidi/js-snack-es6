@@ -11,3 +11,13 @@ const vips = [
   "Amal Clooney",
   "Maneskin",
 ];
+console.log(vips);
+
+const invitees = vips.map((vip, index) => {
+  return {
+    tavolo: "tavolo vip",
+    nome: vip,
+    posto: index,
+  };
+});
+console.log(invitees);

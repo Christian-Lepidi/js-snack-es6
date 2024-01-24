@@ -10,3 +10,5 @@ const allStudents = [
 
 const nomiInMaiuscolo = allStudents.map((nomi) => nomi.toUpperCase());
 console.log(nomiInMaiuscolo);
+
+const votiMaggiori = 
