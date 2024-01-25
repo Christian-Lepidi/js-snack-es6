@@ -21,6 +21,9 @@ const bicycles = [
   },
 ];
 
-for (i = 0; i < bicycles.length; i++) {
-  console.log(bicycles[i]);
+for (i = 0; i < bicycles.length; i++) {}
+
+for (let i of bicycles) {
 }
+const pesoMinore = bicycles.filter((pesi) => pesi.peso < 60);
+console.log(pesoMinore);
