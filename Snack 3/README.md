@@ -5,3 +5,6 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 fai un ciclo sull'array
 recupera il singolo elemento dell'array
 recupera le proprietà dell'oggetto tramite destructuring
+-Conservo il peso della prima bici,
+-Poi scorro tutte le altre confrontando con il peso conservato,
+-Appena trovo un peso minore di quello conservato,lo sostituisco.

@@ -21,9 +21,20 @@ const bicycles = [
   },
 ];
 
-for (i = 0; i < bicycles.length; i++) {
-  console.log(bicycles[i]);
+let pesoMinore = bicycles[0].peso;
+let position = 0;
+
+for (let i = 1; i < bicycles.length; i++) {
+  let pesoBike = bicycles[i].peso;
+
+  if (pesoBike < pesoMinore) {
+    pesoMinore = pesoBike;
+    position = i;
+  }
 }
 
-for (let i of bicycles) {
-}
+console.log(bicycles[position].nome);
+console.log(bicycles[position].peso);
+
+const { nome, peso } = bicycles[position];
+console.log(`il nome della bicicletta è ${nome} e il suo peso è di ${peso}`);
