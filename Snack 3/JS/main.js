@@ -21,5 +21,6 @@ const bicycles = [
   },
 ];
 
-const [firstbike, secondbike, thirdbike, fourthbike, fifthbike] = bicycles;
-console.log(firstbike, secondbike, thirdbike, fourthbike, fifthbike);
+for (i = 0; i < bicycles.length; i++) {
+  console.log(bicycles[i]);
+}
