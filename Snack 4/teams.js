@@ -36,8 +36,14 @@ const teams = [
   },
 ];
 
-for (let i = 0; i < teams.length; i++) {
-  teams[i].score = Math.floor(Math.random() * 100 + 1);
-  teams[i].foul = Math.floor(Math.random() * 100 + 1);
+for (let team of teams) {
+  team.score = Math.floor(Math.random() * 100 + 1);
+  team.foul = Math.floor(Math.random() * 100 + 1);
+  console.log(team);
 }
-console.log(teams);
+
+const foulTeam = teams.map((team) => {
+  const { name, foul } = team;
+  return { name, foul };
+});
+console.log(foulTeam);
