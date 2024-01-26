@@ -38,5 +38,6 @@ const teams = [
 
 for (let i = 0; i < teams.length; i++) {
   teams[i].score = Math.floor(Math.random() * 100 + 1);
-  console.log(teams[i].score);
+  teams[i].foul = Math.floor(Math.random() * 100 + 1);
 }
+console.log(teams);
